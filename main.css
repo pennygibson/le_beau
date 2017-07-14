@@ -537,6 +537,9 @@ MEDIA QUERIES
     .eventImageLg{
         display: none;
     }
+    #eventsHeading{
+        display: none;
+    }
 }
 
 
