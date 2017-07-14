@@ -530,6 +530,9 @@ MEDIA QUERIES
     .fudgePic{
         width: 100%;
     }
+    #eventHeading{
+        display: none;
+    }
 
 }
 
@@ -537,9 +540,7 @@ MEDIA QUERIES
     .eventImageLg{
         display: none;
     }
-    #eventHeading{
-        display: none;
-    }
+  
 }
 
 
