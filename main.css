@@ -17,8 +17,7 @@ Fonts- font-family: 'Source Sans Pro', sans-serif;
 body{
   font-family: 'Source Sans Pro', sans-serif;
     max-width: 1400px;
-    margin: 0 auto !important;
-    float: none !important;
+    margin: auto;
 }
 
 ul{
