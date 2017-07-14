@@ -463,7 +463,7 @@ MEDIA QUERIES
     }
     .mainNav{
         background-color: white;
-        min-height: 180px;
+        height: 100%;
     }
     .mainNav a{
         font-size: 1.3em;
