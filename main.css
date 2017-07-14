@@ -1,0 +1,595 @@
+
+/*********************
+SITE COLORS
+Lime Green - #ACDD30
+Brown - #352324
+Purple - #8332B2 
+Pink - #DA17AF
+
+Fonts- font-family: 'Source Sans Pro', sans-serif;
+
+**********************/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+    max-width: 1400px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.current{
+    text-decoration: underline;
+}
+.mainNav{
+    background-color:#ACDD30; 
+    
+}
+
+.mainNav ul{
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    width: 70%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mainNav a{
+    color: white;
+    padding: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.mainNav a:hover{
+    color: #352324;
+}
+.mainHeader{
+    background-color:#352324;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainHeader img{
+    align-self: center;
+}
+.tagline{
+    display: none;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.items{
+    /*border: 1px solid #DA17AF;*/
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 20px;
+    flex: 1 25%;
+}
+
+.items img{
+    border-radius: 15px;
+   
+}
+
+.homeImage{
+    display: none;
+}
+
+.fudge a{
+    color: #acdd30;
+}
+
+.items h2{
+    color: #acdd30;
+    /*text-decoration: underline;
+    text-decoration-color: #DA17AF;*/
+    
+}
+.items p{
+    padding: 0 10px;
+}
+.items h2:hover{
+    color: #ACDD30;
+}
+footer{
+    background-color: #352324;
+    color: white;
+}
+.mainFooter,
+.footerNav{
+    background-color: #ACDD30;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    padding: 5px
+}
+.footerNav a{
+    color: white;
+    padding: 20px;
+}
+.footerNav a:hover{
+    color: #352324;
+}
+.foot li{
+    text-align: center;
+}
+
+.subFooter{
+    background-color: #352324;
+    color: white;
+    font-size: .8em;
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.title{
+    text-align: center;
+    color: #ACDD30;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+.fbLogo{
+    padding-top: 10px;
+    opacity: .4;
+}
+.fudgeHeader{
+    /*background-image: url(images/background-test.jpg); */
+   /* background-image: url(images/alternate_background.jpg); */
+    background-image: url(images/cheesecake-bg.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.fudgePageHeader{
+    background-image: none;
+    height: 270px;
+}
+
+/*****************
+Fudge Page header
+*****************/
+.fudgePagePic{
+    background-image: url(images/bg_fudge_page.jpg)
+    
+}
+.fudgeh1{
+    text-align:center;
+}
+.fudgePic{
+    align-self: center;
+    
+}
+#button1, #button2 {
+    margin-bottom: 30px
+}
+.fudgeLocations, .flavourList{
+    display: none;
+}
+#retailerList{
+    color: #453524;
+}
+#retailerList:hover{
+    color: #acdd30;
+}
+.fudge li{
+    line-height: 1.5em; 
+}
+
+
+/*****************/
+
+.fudgePageHeader .mainLogoFudge{
+    margin-top: 0;
+    opacity:1.0; 
+}
+.mainLogoFudge{
+    padding-top:0;
+    margin-top: -20px;
+    opacity:  ;
+}
+#smHomeLogo{
+    display: none;
+}
+
+.footerContact a{
+        color: white;
+    }
+    .footerContact a:hover{
+        color: #ACDD30;
+    }
+/*****************************************
+LUNCH PAGE
+*****************************************/
+
+.lunchHeading, .lunchTagline{
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+}
+.lunchHeading{
+    font-size: 2.2em;
+}
+.lunchContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.lunchContent{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding: 30px;
+}
+.lunchContent1, .lunchContent3{
+    flex: 2 30%;
+    text-align: center;
+    padding: 10px;
+    /*background-color: #ACDD30;
+    background-color: rgba(172,221,48,0.3); */
+    border: 1px solid #acdd30;
+    border-radius: 10px;
+    line-height: 1.5em;
+}
+.bottomSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+
+.prices{
+   text-align: center;
+    margin: 0 30px;
+    padding: 10px;
+   /* background-color: #ACDD30;
+    background-color: rgba(172,221,48,0.3); */
+    border: 1px solid #acdd30;
+    border-radius: 10px;
+    line-height: 1.5em;
+    
+}
+.lunchPic{
+    border-radius: 10px;
+}
+.lunchTagline{
+    padding-bottom: 20px;
+}
+
+/*********************************************
+            EVENTS PAGE
+*********************************************/
+.eventsHeading{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.eventsTagline{
+  text-align:center;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.eventsPageContainer{
+    width: 85%;
+}
+#eventsButton{
+    background-color: #acdd30;
+    color: white;
+    width: 25%;
+    border: 2px solid #acdd30;
+}
+#eventsButton:hover{
+    background-color: #453524;
+}
+.eventsPageContainer h2{
+    color: #453524;
+}
+.eventsHeading a{
+    color: #acdd30;
+}
+.eventImageSm{
+    display: none;
+}
+/*********************************************
+CONTACT US PAGE
+*********************************************/
+
+.contactHeading{
+    text-align: center;
+}
+.contactPic{
+    margin-left: 40px;
+    align-self:flex-start;
+    border: 3px solid #acdd30;
+    border-radius: 8px;
+}
+.image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.image li{
+    text-align: center;
+}
+.image a{
+    color: #352324;
+}
+.image a:hover{
+    color: #ACDD30;
+}
+/*********************************
+CATERING PAGE
+*********************************/
+.cateringContent{
+    width: 70%;
+}
+
+/**********************************
+EMAIL SIGN UP BUTTON
+***********************************/
+
+button{
+    color: #352324;
+    background-color: white;
+    padding: 5px;
+    font-size: .7em;
+    border: 1px solid #acdd30;
+    border-radius: 8px;
+    width: 35%;
+}
+button:hover{
+    background-color: #352324;
+    color: white;
+}
+
+/***********************************************
+MEDIA QUERIES
+************************************************/
+@media (max-width: 1030px){
+    .mainNav ul{
+        width: 100%;
+    }
+    #p4, #p8{
+        display: none;
+    }
+    .lunchContent3{
+        flex: 1 100%;
+        margin-top: 20px;
+    }
+    .prices{
+        margin: 0 0 0 30px;
+    }
+    .image{
+        width: 100%;
+    }
+    .contactPic{
+        margin-left: 10px;
+    }
+    .emailSignUp{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .eventsPageContainer{
+        width: 100%;
+        margin:0 auto;
+}
+    .eventsPage{
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+@media (max-width: 960px){
+    #homeLogo{
+        display: none;
+    }
+    #smHomeLogo{
+        display: block;
+    }
+}
+
+@media (max-width: 875px){
+    .mainNav a{
+        padding:10px;
+    }
+    
+    
+    .mainContainer{
+        flex-wrap: wrap;
+    }
+    .items{
+        flex: 1 40%;
+    }
+    .events{
+        margin-top: 20px;
+    }
+    .lunchContainer{
+        width: 90%;
+    }
+    .lunchContent1, .lunchContent2, .lunchContent3{
+        flex: 1 100%;
+        margin: 0;
+    }
+    .lunchContent1, .lunchContent3{
+        padding: 0;
+        border: none;
+    }
+    .prices{
+        order: -1;
+    }
+    .contactPic{
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 550px){
+    .tagline{
+        background-color:#ACDD30;
+        display: block;
+        color: white;
+        text-align: center;
+      }
+    .mainNav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainNav{
+        background-color: white;
+    }
+    .mainNav a{
+        font-size: 1.3em;
+        color: #ACDD30;
+    }
+    .mainNav li{
+        padding-bottom: 15px;
+    }
+    .mainHeader{
+        height: 300px;
+        }
+    .mainLogoFudge{
+        margin-top:0;
+    }
+    .mainHeader img{
+    width: 100%;
+        margin-top:50px;
+    }
+   .fudgeHeader{
+    background-image: none; 
+    } 
+    .mainLogoFudge{
+    opacity: ;
+}
+    
+    .mainContainer{
+        flex-direction: column;
+    }
+    .homeImage{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .footerNav a{
+        padding: 7px;
+        font-size: .8em;
+    }
+    
+    .subFooter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lunchContainer{
+        width: 100%;
+    }
+    
+    #p2, #p3, #p6, #p7{
+        display: none;
+    }
+    .contactPic{
+        display: none;
+    }
+    .image{
+        line-height: 1.8em;
+    }
+    .fudgePic{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 300px){
+    .eventImageLg{
+        display: none;
+    }
+}
+
+/*@media (max-width: 875px){
+    .mainNav a{
+        padding:10px;
+    }
+    
+    
+    .mainContainer{
+        flex-wrap: wrap;
+    }
+    .items{
+        flex: 1 40%;
+    }
+    .events{
+        margin-top: 20px;
+    }
+    .lunchContent1, .lunchContent2, .lunchContent3{
+        flex: 1 100%;
+        margin: 0;
+    }
+    .lunchContent1, .lunchContent3{
+        padding: 0;
+        border: none;
+    }
+    .prices{
+        order: -1;
+    }
+}
+
+/*@media (max-width: 1030px){
+    .mainNav ul{
+        width: 100%;
+    }
+    #p4, #p8{
+        display: none;
+    }
+    .lunchContent3{
+        flex: 1 100%;
+        margin-top: 20px;
+    }
+    .prices{
+        margin: 0 0 0 30px;
+    }
+} 
+
+@media (max-width: 960px){
+    #homeLogo{
+        display: none;
+    }
+    #smHomeLogo{
+        display: block;
+    }
+} */
+
+
