@@ -32,6 +32,9 @@ a {
 .current {
     text-decoration: underline;
 }
+h1{
+    color: #453524;
+}
 .mainNav{
     background-color:#ACDD30; 
     
@@ -177,8 +180,8 @@ Fudge Page header
     background-image: url(images/bg_fudge_page.jpg)
     
 }
-.list{
-    align-self: center;
+.fudgeP{
+    margin: 5px;
 }
 
 #button1, #button2 {
@@ -198,15 +201,14 @@ Fudge Page header
 }
 
 
+
 /*****************/
 
-/*.fudgePageHeader .mainLogoFudge{
-    margin-top: 0;
-    opacity:1.0; */
-}
+
+
 .mainLogoFudge{
     padding-top:0;
-    margin-top: -20px;
+    margin-top: ;
     opacity:  ;
 }
 #smHomeLogo{
@@ -248,8 +250,6 @@ LUNCH PAGE
     flex: 2 30%;
     text-align: center;
     padding: 10px;
-    /*background-color: #ACDD30;
-    background-color: rgba(172,221,48,0.3); */
     border: 1px solid #acdd30;
     border-radius: 10px;
     line-height: 1.5em;
@@ -265,8 +265,6 @@ LUNCH PAGE
    text-align: center;
     margin: 0 30px;
     padding: 10px;
-   /* background-color: #ACDD30;
-    background-color: rgba(172,221,48,0.3); */
     border: 1px solid #acdd30;
     border-radius: 10px;
     line-height: 1.5em;
@@ -282,17 +280,24 @@ LUNCH PAGE
 /*********************************************
             EVENTS PAGE
 *********************************************/
-.eventsHeading{
+.eventTopContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 0;
-    flex: 1 100%;
+}
+.eventsHeading{
+    margin: 0;
+}
+#eventHeading{
+    color:#453524;
+    font-size: 1.4em;
+    margin-top: 10px;
 }
 
-.eventsTagline{
-  text-align:center;
-    margin-top: 0;
-    font-size: 1.2em;
-}
 .eventsPageContainer{
     width: 85%;
 }
@@ -369,6 +374,7 @@ button:hover{
     background-color: #352324;
     color: white;
 }
+
 
 /***********************************************
 MEDIA QUERIES
@@ -530,9 +536,8 @@ MEDIA QUERIES
     .fudgePic{
         width: 100%;
     }
-    #eventHeading{
-        display: none;
-    }
+    
+    
 
 }
 
@@ -540,7 +545,10 @@ MEDIA QUERIES
     .eventImageLg{
         display: none;
     }
-  
+
 }
+
+
+
 
 
