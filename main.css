@@ -301,10 +301,10 @@ LUNCH PAGE
 .eventsPageContainer{
     width: 85%;
 }
-#eventsButton{
+.eventsButton{
     background-color: #acdd30;
     color: white;
-    width: 25%;
+    width: 15%;
     border: 2px solid #acdd30;
 }
 #eventsButton:hover{
