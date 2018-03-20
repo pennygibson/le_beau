@@ -15,8 +15,10 @@ Fonts- font-family: 'Source Sans Pro', sans-serif;
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    max-width: 1400px;
-    margin: auto; /*to center in browser windown when max-width is exceeded */
+    margin: 0 auto; /*to center in browser windown when max-width is exceeded */
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
 }
 
 ul{
@@ -72,8 +74,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    max-width: 1400px; 
     margin: 20px auto;
     justify-content: center;
+    flex: 1;
 }
 
 .items{
