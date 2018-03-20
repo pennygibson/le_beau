@@ -303,9 +303,12 @@ LUNCH PAGE
     color: white;
     width: 25%;
     border: 2px solid #acdd30;
+    margin-top:10px;
+    transition: box-shadow .6s, opacity .6s;
 }
 #eventsButton:hover{
-    background-color: #453524;
+    opacity: .7;
+    box-shadow: 2px 2px 4px grey;
 }
 .eventsPageContainer h2{
     color: #453524;
