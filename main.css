@@ -300,12 +300,12 @@ h1#eventHeading{
 button.eventsButton{
     background-color: #acdd30;
     color: white;
-    width: 25%;
     min-width: 200px;
+    max-width: 250px;
     border: 2px solid #acdd30;
     margin-top:10px;
     transition: all .6s ease;
-    margin: 5px;
+    font-weight: bold;
 }
 button.eventsButton:hover{
     opacity: .7;
