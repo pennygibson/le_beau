@@ -15,8 +15,10 @@ Fonts- font-family: 'Source Sans Pro', sans-serif;
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    max-width: 1400px;
-    margin: auto; /*to center in browser windown when max-width is exceeded */
+    margin: 0 auto; /*to center in browser windown when max-width is exceeded */
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
 }
 
 ul{
@@ -31,9 +33,6 @@ a {
 
 .current {
     text-decoration: underline;
-}
-h1{
-    color: #453524;
 }
 .mainNav{
     background-color:#ACDD30; 
@@ -63,10 +62,6 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-}
-#smHomeLogo{
-   max-height: 80%;
 }
 .mainHeader img{
     align-self: center;
@@ -79,9 +74,10 @@ h1{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    max-width: 1400px; 
     margin: 20px auto;
     justify-content: center;
-    height: 100%;
+    flex: 1;
 }
 
 .items{
@@ -164,14 +160,17 @@ footer{
     background-image: url(images/cheesecake-bg.jpg);
     background-repeat:no-repeat;
     background-position: center;
-    height: 300px;
+    height: 350px;
     width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
-
-
+.fudgePageHeader{
+    background-image: none;
+    height: 270px;
+}
 
 /*****************
 Fudge Page header
@@ -180,8 +179,8 @@ Fudge Page header
     background-image: url(images/bg_fudge_page.jpg)
     
 }
-.fudgeP{
-    margin: 5px;
+.list{
+    align-self: center;
 }
 
 #button1, #button2 {
@@ -201,14 +200,15 @@ Fudge Page header
 }
 
 
-
 /*****************/
 
-
-
+.fudgePageHeader .mainLogoFudge{
+    margin-top: 0;
+    opacity:1.0; 
+}
 .mainLogoFudge{
     padding-top:0;
-    margin-top: ;
+    margin-top: -20px;
     opacity:  ;
 }
 #smHomeLogo{
@@ -250,6 +250,8 @@ LUNCH PAGE
     flex: 2 30%;
     text-align: center;
     padding: 10px;
+    /*background-color: #ACDD30;
+    background-color: rgba(172,221,48,0.3); */
     border: 1px solid #acdd30;
     border-radius: 10px;
     line-height: 1.5em;
@@ -265,6 +267,8 @@ LUNCH PAGE
    text-align: center;
     margin: 0 30px;
     padding: 10px;
+   /* background-color: #ACDD30;
+    background-color: rgba(172,221,48,0.3); */
     border: 1px solid #acdd30;
     border-radius: 10px;
     line-height: 1.5em;
@@ -280,35 +284,31 @@ LUNCH PAGE
 /*********************************************
             EVENTS PAGE
 *********************************************/
-.eventTopContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
 .eventsHeading{
-    margin: 0;
-}
-#eventHeading{
-    color:#453524;
-    font-size: 1.4em;
-    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    flex: 1 100%;
 }
 
+.eventsTagline{
+  text-align:center;
+    margin-top: 0;
+    font-size: 1.2em;
+}
 .eventsPageContainer{
     width: 85%;
 }
-.eventsButton{
+#eventsButton{
     background-color: #acdd30;
     color: white;
-    width: 15%;
+    width: 25%;
     border: 2px solid #acdd30;
+    margin-top:10px;
+    transition: box-shadow .6s, opacity .6s;
 }
 #eventsButton:hover{
-    background-color: #453524;
+    opacity: .7;
+    box-shadow: 2px 2px 4px grey;
 }
 .eventsPageContainer h2{
     color: #453524;
@@ -375,7 +375,6 @@ button:hover{
     color: white;
 }
 
-
 /***********************************************
 MEDIA QUERIES
 ************************************************/
@@ -422,10 +421,6 @@ MEDIA QUERIES
     }
     #smHomeLogo{
         display: block;
-    }
-    .cateringContent{
-        width: 90%;
-        margin: 0 auto;
     }
 }
 
@@ -486,15 +481,17 @@ MEDIA QUERIES
     .mainHeader{
         height: 100%;
         }
-  /*  .mainLogoFudge{
+    .mainLogoFudge{
         margin-top:0;
-    } */
+    }
     .mainHeader img{
         width: 100%;
+        margin-top:50px;
     }
    .fudgeHeader{
        background-image: none; 
-       } 
+       height: 100%;
+    } 
     
     .mainContainer{
         height: 100%;
@@ -533,15 +530,13 @@ MEDIA QUERIES
     }
     .contactPic{
         display: none;
-    }  
+    }
     .image{
         line-height: 1.8em;
     }
     .fudgePic{
         width: 100%;
     }
-    
-    
 
 }
 
@@ -549,8 +544,9 @@ MEDIA QUERIES
     .eventImageLg{
         display: none;
     }
-
 }
+
+
 
 
 
