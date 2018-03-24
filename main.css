@@ -289,20 +289,15 @@ LUNCH PAGE
     flex: 1 100%;
 }
 
-#eventheading{
+h1#eventheading{
     text-align: center;
     font-size: 1.7em;
 }
 
-.eventsTagline{
-  text-align:center;
-    margin-top: 0;
-    font-size: 1.2em;
-}
 .eventsPageContainer{
     width: 85%;
 }
-#eventsButton{
+button.eventsButton{
     background-color: #acdd30;
     color: white;
     width: 25%;
@@ -312,7 +307,7 @@ LUNCH PAGE
     transition: all .6s ease;
     margin: 5px;
 }
-#eventsButton:hover{
+button.eventsButton:hover{
     opacity: .7;
     box-shadow: 2px 2px 4px grey;
     background-color: #acdd30;
