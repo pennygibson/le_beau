@@ -217,6 +217,16 @@ Fudge Page header
     display: none;
 }
 
+.lunchContent1.fudgeP{
+    box-shadow: 1px 1px 1px 2px #d3d3d3;
+    border: none;
+    height: 100%;
+}
+.lunchContent3.fudgeP{
+    margin: 0 18px;
+    box-shadow: 1px 1px 1px 2px #d3d3d3;
+}
+
 .footerContact a{
         color: white;
     }
@@ -300,7 +310,7 @@ h1#eventHeading{
 .eventsPageContainer{
     width: 85%;
 }
-button.eventsButton{
+button#button2, button.eventsButton{
     background-color: #acdd30;
     color: white;
     min-width: 200px;
@@ -310,7 +320,7 @@ button.eventsButton{
     transition: all .6s ease;
     font-weight: bold;
 }
-button.eventsButton:hover{
+button#button2, button.eventsButton:hover{
     opacity: .7;
     box-shadow: 2px 2px 4px grey;
     background-color: #acdd30;
@@ -403,6 +413,12 @@ MEDIA QUERIES
     .lunchContent3{
         flex: 1 100%;
         margin-top: 20px;
+    }
+    .lunchContent3.fudgeP{
+      margin: 0 auto;
+    }
+    .lunchContent1.fudgeP{
+    height: auto;
     }
     .prices{
         margin: 0 0 0 30px;
