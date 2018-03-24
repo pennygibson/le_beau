@@ -46,6 +46,9 @@ a {
     width: 90%;
     margin: 0 auto;
 }
+button, a{
+    transition: all .6s ease;
+}
 
 .mainNav a{
     color: white;
