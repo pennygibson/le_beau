@@ -285,8 +285,13 @@ LUNCH PAGE
 *********************************************/
 .eventsHeading{
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 2px auto;
     flex: 1 100%;
+}
+
+#eventheading{
+    text-align: center;
+    font-size: 1.7em;
 }
 
 .eventsTagline{
@@ -305,6 +310,7 @@ LUNCH PAGE
     border: 2px solid #acdd30;
     margin-top:10px;
     transition: all .6s ease;
+    margin: 5px;
 }
 #eventsButton:hover{
     opacity: .7;
