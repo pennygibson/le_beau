@@ -225,6 +225,7 @@ Fudge Page header
 .lunchContent3.fudgeP{
     margin: 0 18px;
     box-shadow: 1px 1px 1px 2px #d3d3d3;
+    border: none;
 }
 
 .footerContact a{
@@ -320,7 +321,7 @@ button#button2, button.eventsButton{
     transition: all .6s ease;
     font-weight: bold;
 }
-button#button2, button.eventsButton:hover{
+button#button2:hover, button.eventsButton:hover{
     opacity: .7;
     box-shadow: 2px 2px 4px grey;
     background-color: #acdd30;
@@ -467,6 +468,11 @@ MEDIA QUERIES
         padding: 0;
         border: none;
     }
+     .lunchContent3.fudgeP, .lunchContent1.fudgeP{
+         margin: 4px auto;
+         padding: 4px;
+     }
+   
     .prices{
         order: -1;
     }
