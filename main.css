@@ -4,9 +4,7 @@ Lime Green - #ACDD30
 Brown - #352324
 Purple - #8332B2 
 Pink - #DA17AF
-
 Fonts- font-family: 'Source Sans Pro', sans-serif;
-
 **********************/
 
 *{
@@ -46,12 +44,16 @@ a {
     width: 90%;
     margin: 0 auto;
 }
+button, a{
+    transition: all .6s ease;
+}
 
 .mainNav a{
     color: white;
     padding: 20px;
     font-size: 1.2em;
     text-transform: uppercase;
+    transition: color 0.6s ease;
 }
 
 .mainNav a:hover{
@@ -208,11 +210,20 @@ Fudge Page header
 }
 .mainLogoFudge{
     padding-top:0;
-    margin-top: -20px;
-    opacity:  ;
 }
 #smHomeLogo{
     display: none;
+}
+
+.lunchContent1.fudgeP{
+    box-shadow: 1px 1px 1px 2px #d3d3d3;
+    border: none;
+    height: 100%;
+}
+.lunchContent3.fudgeP{
+    margin: 0 18px;
+    box-shadow: 1px 1px 1px 2px #d3d3d3;
+    border: none;
 }
 
 .footerContact a{
@@ -286,29 +297,32 @@ LUNCH PAGE
 *********************************************/
 .eventsHeading{
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 2px auto;
     flex: 1 100%;
 }
 
-.eventsTagline{
-  text-align:center;
-    margin-top: 0;
-    font-size: 1.2em;
+h1#eventHeading{
+    text-align: center;
+    font-size: 1.7em;
 }
+
 .eventsPageContainer{
     width: 85%;
 }
-#eventsButton{
+button#button2, button.eventsButton{
     background-color: #acdd30;
     color: white;
-    width: 25%;
+    min-width: 200px;
+    max-width: 250px;
     border: 2px solid #acdd30;
     margin-top:10px;
-    transition: box-shadow .6s, opacity .6s;
+    transition: all .6s ease;
+    font-weight: bold;
 }
-#eventsButton:hover{
+button#button2:hover, button.eventsButton:hover{
     opacity: .7;
     box-shadow: 2px 2px 4px grey;
+    background-color: #acdd30;
 }
 .eventsPageContainer h2{
     color: #453524;
@@ -399,6 +413,12 @@ MEDIA QUERIES
         flex: 1 100%;
         margin-top: 20px;
     }
+    .lunchContent3.fudgeP{
+      margin: 0 auto;
+    }
+    .lunchContent1.fudgeP{
+    height: auto;
+    }
     .prices{
         margin: 0 0 0 30px;
     }
@@ -446,6 +466,11 @@ MEDIA QUERIES
         padding: 0;
         border: none;
     }
+     .lunchContent3.fudgeP, .lunchContent1.fudgeP{
+         margin: 4px auto;
+         padding: 4px;
+     }
+   
     .prices{
         order: -1;
     }
@@ -545,7 +570,3 @@ MEDIA QUERIES
         display: none;
     }
 }
-
-
-
-
