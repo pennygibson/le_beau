@@ -10,6 +10,9 @@ Fonts- font-family: 'Source Sans Pro', sans-serif;
 *{
     box-sizing: border-box;
 }
+*:focus {
+	outline:none;
+}
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
@@ -33,9 +36,8 @@ a {
     text-decoration: underline;
 }
 .mainNav{
-    background-color:#ACDD30; 
-    
-}
+	border-bottom: 4px solid #accd30; 
+  }
 
 .mainNav ul{
     display: flex;
@@ -49,7 +51,7 @@ button, a{
 }
 
 .mainNav a{
-    color: white;
+    color: #ACCD30;
     padding: 20px;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -83,11 +85,14 @@ button, a{
 }
 
 .items{
-   /* border: 1px solid #DA17AF; */
     border-radius: 10px;
     text-align: center;
     margin: 0 20px;
     flex: 1 25%;
+}
+
+.fudge, .lunch, .events{
+	margin: 60px 20px;
 }
 
 .items img{
@@ -100,17 +105,18 @@ button, a{
 }
 
 .fudge a{
-    color: #acdd30;
+    color: #accd30;
 }
 
 .items h2{
-    color: #acdd30;
+    color: #accd30;
+	font-size: 1.8em;
 }
 .items p{
     padding: 0 10px;
 }
 .items h2:hover{
-    color: #ACDD30;
+    color: #ACCD30;
 }
 footer{
     background-color: #352324;
@@ -118,23 +124,27 @@ footer{
 }
 .mainFooter,
 .footerNav{
-    background-color: #ACDD30;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     flex-wrap:wrap;
     margin: 0 auto;
-    padding: 5px
+    padding: 8px 8px 0;
 }
 .footerNav a{
-    color: white;
+    color: #accd30;
     padding: 20px;
 }
 .footerNav a:hover{
     color: #352324;
+	letter-spacing: .1em;
 }
 .foot li{
     text-align: center;
+}
+.fbLogo:hover{
+	opacity: 0.7;
 }
 
 .subFooter{
@@ -142,22 +152,28 @@ footer{
     color: white;
     font-size: .8em;
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 10px auto;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.bottomLinks{
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 0 10px;
+}
+.copyright{
+	font-size: .8em;
+	color: #accd30;
+}
 
 .title{
     text-align: center;
-    color: #ACDD30;
+    color: #ACCD30;
     font-size: 1.2em;
-    padding-top: 10px;
 }
-.fbLogo{
-    padding-top: 10px;
-    opacity: .4;
-}
+
 .fudgeHeader{
     background-image: url(images/cheesecake-bg.jpg);
     background-repeat:no-repeat;
@@ -195,7 +211,7 @@ Fudge Page header
     color: #453524;
 }
 #retailerList:hover{
-    color: #acdd30;
+    color: #accd30;
 }
 .fudge li{
     line-height: 1.5em; 
@@ -226,11 +242,12 @@ Fudge Page header
     border: none;
 }
 
+
 .footerContact a{
         color: white;
     }
     .footerContact a:hover{
-        color: #ACDD30;
+        color: #ACCD30;
     }
 /*****************************************
 LUNCH PAGE
@@ -261,30 +278,25 @@ LUNCH PAGE
     flex: 2 30%;
     text-align: center;
     padding: 10px;
-    /*background-color: #ACDD30;
-    background-color: rgba(172,221,48,0.3); */
-    border: 1px solid #acdd30;
     border-radius: 10px;
     line-height: 1.5em;
+	box-shadow: 0px 0px 1px 2px #cfe08f;
 }
+
 .bottomSection{
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
 }
 
-
 .prices{
    text-align: center;
     margin: 0 30px;
     padding: 10px;
-   /* background-color: #ACDD30;
-    background-color: rgba(172,221,48,0.3); */
-    border: 1px solid #acdd30;
     border-radius: 10px;
     line-height: 1.5em;
-    
-}
+	box-shadow: 0px 0px 1px 2px #cfe08f;
+ }
 .lunchPic{
     border-radius: 10px;
 }
@@ -310,25 +322,28 @@ h1#eventHeading{
     width: 85%;
 }
 button#button2, button.eventsButton{
-    background-color: #acdd30;
+    background-color: #accd30;
     color: white;
     min-width: 200px;
     max-width: 250px;
-    border: 2px solid #acdd30;
+    border: 2px solid #accd30;
     margin-top:10px;
     transition: all .6s ease;
     font-weight: bold;
+	border-radius: 6px;
+	padding: 6px 2px;
+	letter-spacing: .1em;
 }
 button#button2:hover, button.eventsButton:hover{
     opacity: .7;
     box-shadow: 2px 2px 4px grey;
-    background-color: #acdd30;
+    background-color: #accd30;
 }
 .eventsPageContainer h2{
     color: #453524;
 }
 .eventsHeading a{
-    color: #acdd30;
+    color: #accd30;
 }
 .eventImageSm{
     display: none;
@@ -343,7 +358,7 @@ CONTACT US PAGE
 .contactPic{
     margin-left: 40px;
     align-self:flex-start;
-    border: 3px solid #acdd30;
+    border: 3px solid #accd30;
     border-radius: 8px;
 }
 .image{
@@ -362,31 +377,13 @@ CONTACT US PAGE
     color: #352324;
 }
 .image a:hover{
-    color: #ACDD30;
+    color: #ACCD30;
 }
 /*********************************
 CATERING PAGE
 *********************************/
 .cateringContent{
     width: 70%;
-}
-
-/**********************************
-EMAIL SIGN UP BUTTON
-***********************************/
-
-button{
-    color: #352324;
-    background-color: white;
-    padding: 5px;
-    font-size: .7em;
-    border: 1px solid #acdd30;
-    border-radius: 8px;
-    width: 35%;
-}
-button:hover{
-    background-color: #352324;
-    color: white;
 }
 
 /***********************************************
@@ -452,9 +449,9 @@ MEDIA QUERIES
     .items{
         flex: 1 40%;
     }
-    .events{
-        margin-top: 20px;
-    }
+    .fudge, .lunch, .events{
+	margin: 5px;
+	}
     .lunchContainer{
         width: 90%;
     }
@@ -483,7 +480,7 @@ MEDIA QUERIES
 @media (max-width: 550px){
     .tagline{
         font-size: .8em;
-        background-color:#ACDD30;
+        background-color:#ACCD30;
         display: block;
         color: white;
         text-align: center;
@@ -498,7 +495,7 @@ MEDIA QUERIES
     }
     .mainNav a{
         font-size: 1.3em;
-        color: #ACDD30;
+        color: #ACCD30;
     }
     .mainNav li{
         padding-bottom: 15px;
