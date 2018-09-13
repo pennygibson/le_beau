@@ -242,7 +242,6 @@ Fudge Page header
     border: none;
 }
 
-
 .footerContact a{
         color: white;
     }
@@ -337,6 +336,7 @@ button#button2, button.eventsButton{
 button#button2:hover, button.eventsButton:hover{
     opacity: .7;
     box-shadow: 2px 2px 4px grey;
+
     background-color: #accd30;
 }
 .eventsPageContainer h2{
