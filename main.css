@@ -217,6 +217,12 @@ Fudge Page header
     line-height: 1.5em; 
 }
 
+/*.fudgeFB{
+	max-width: 80%;
+	margin: 0 30px;
+	display: flex;
+	flex-direction: column;
+}
 
 /*****************/
 
@@ -241,6 +247,17 @@ Fudge Page header
     box-shadow: 1px 1px 1px 2px #d3d3d3;
     border: none;
 }
+.fudgeFB{
+	text-align: center;
+    border-radius: 10px;
+    line-height: 1.5em;
+	margin: 0 auto;
+	max-width: 80%;
+}
+.fudgeFB div{
+	padding: 0 10px;
+} 
+
 
 .footerContact a{
         color: white;
@@ -467,7 +484,13 @@ MEDIA QUERIES
          margin: 4px auto;
          padding: 4px;
      }
-   
+	
+	.fudgeFB{
+		max-width: 84%;
+		margin-top: -24px;
+		padding: 0;
+		box-shadow:1px 1px 1px 2px #d3d3d3;
+		}
     .prices{
         order: -1;
     }
