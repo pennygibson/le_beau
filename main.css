@@ -146,6 +146,9 @@ footer{
 .fbLogo:hover{
 	opacity: 0.7;
 }
+#fbLogo{
+	align-self:center;
+}
 
 .subFooter{
     background-color: #352324;
@@ -291,12 +294,12 @@ LUNCH PAGE
     padding: 30px;
 }
 .lunchContent1, .lunchContent3{
-    flex: 2 30%;
+    flex: 1;
     text-align: center;
     padding: 10px;
+	margin: 0 20px;
     border-radius: 10px;
     line-height: 1.5em;
-	box-shadow: 0px 0px 1px 2px #cfe08f;
 }
 
 .bottomSection{
@@ -311,7 +314,6 @@ LUNCH PAGE
     padding: 10px;
     border-radius: 10px;
     line-height: 1.5em;
-	box-shadow: 0px 0px 1px 2px #cfe08f;
  }
 .lunchPic{
     border-radius: 10px;
@@ -375,7 +377,6 @@ CONTACT US PAGE
 .contactPic{
     margin-left: 40px;
     align-self:flex-start;
-    border: 3px solid #accd30;
     border-radius: 8px;
 }
 .image{
@@ -396,6 +397,9 @@ CONTACT US PAGE
 .image a:hover{
     color: #ACCD30;
 }
+.contactTitle{
+	padding: 20px 0;
+}
 /*********************************
 CATERING PAGE
 *********************************/
@@ -415,6 +419,11 @@ MEDIA QUERIES
         margin: 0 auto;
         padding: 0;
     }
+}
+@media (max-width: 1200px){
+	.lunchContent3.fudgeP, .lunchContent1.fudgeP{
+		box-shadow:0 0 0;
+	}
 }
 @media (max-width: 1030px){
     .mainNav ul{
@@ -489,7 +498,6 @@ MEDIA QUERIES
 		max-width: 84%;
 		margin-top: -24px;
 		padding: 0;
-		box-shadow:1px 1px 1px 2px #d3d3d3;
 		}
     .prices{
         order: -1;
